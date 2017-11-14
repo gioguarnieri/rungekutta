@@ -25,6 +25,7 @@ h=(tmax-tini)/N
 
 t=tini
 y=yini
+filewrite.write(str(t) + '     ' + str(y) + '\n')
 while(t<tmax):
  y=y+h/6*(func(y,t)+2*k2(y,t)+2*k3(y,t)+k4(y,t))
  t=t+h
